@@ -30,12 +30,13 @@ void relayKeyUp(Scene& scene, SDL_Event& e) {
 }
 
 void playerKeyboardLogic(Scene& scene) {
-  auto view = scene.registry.view<PlayerTagComponent, KeyboardComponent, VelocityComponent,
-                                  AccelerationComponent, IsInAirComponent>();
-  for (auto [entity, keyboard, velocity, acceelration, isInAir] : view.each()) {
+  auto view = scene.registry.view<PlayerTagComponent, KeyboardComponent, RectComponent,
+                                  VelocityComponent, AccelerationComponent, IsInAirComponent>();
+  for (auto [entity, keyboard, rect, velocity, acceelration, isInAir] : view.each()) {
     // acceelration.yAcceleration = 0;
     if (keyboard.keys.at(SDLK_UP)) {
       if (isInAir.isInAir == false) {
+        rect.y -= 1;
         velocity.yVelocity = -0.7;
         isInAir.isInAir = true;
       }

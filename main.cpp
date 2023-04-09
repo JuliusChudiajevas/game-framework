@@ -10,7 +10,6 @@
 #include "aabb.hpp"
 #include "entt.hpp"
 
-
 // extern bool aabb(RectComponent&, RectComponent&);
 // extern void clearScreen();
 

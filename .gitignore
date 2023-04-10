@@ -1,7 +1,16 @@
 #cmake generated directories
 build/
 release/
+
+#Visual Studio cmake files and directories
 out/
+CMakeFiles/
+*.vcxproj
+*.vcxproj.filters
+cmake_install.cmake
+CMakeCache.txt
+game.sln
+
 .vs/
 .cache
 log.txt

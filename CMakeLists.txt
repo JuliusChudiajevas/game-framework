@@ -31,7 +31,7 @@ include_directories(${SDL2_INCLUDE_DIR}
 include_directories(${PROJECT_SOURCE_DIR}/src)
 
 
-add_executable(game ${SOURCES})
+add_executable(game WIN32 ${SOURCES})
 #install(TARGETS game DESTINATION ${PROJECT_SOURCE_DIR})
 
 target_link_libraries(game 

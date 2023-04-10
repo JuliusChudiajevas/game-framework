@@ -1,4 +1,6 @@
 build/*
 release/*
+out/
+.vs/
 .cache
 log.txt

@@ -6,10 +6,14 @@ release/
 out/
 CMakeFiles/
 *.vcxproj
+*.vcxproj.user
 *.vcxproj.filters
 cmake_install.cmake
 CMakeCache.txt
 game.sln
+Debug/
+game.dir/
+x64/
 
 .vs/
 .cache

@@ -33,5 +33,6 @@ class TextRenderer {
     SDL_FreeSurface(tempSurface);
     SDL_RenderCopy(Game::renderer, tempTexture, nullptr, &rect);
     SDL_DestroyTexture(tempTexture);
+    TTF_CloseFont(font);
   }
 };

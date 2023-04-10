@@ -35,7 +35,6 @@ add_executable(game ${SOURCES})
 #install(TARGETS game DESTINATION ${PROJECT_SOURCE_DIR})
 
 target_link_libraries(game 
-    mingw32 
     ${SDL2_LIBRARY_DIR}/libSDL2main.a 
     ${SDL2_LIBRARY_DIR}/libSDL2.dll.a 
     ${SDL2_LIBRARY_DIR}/libSDL2_image.dll.a 
